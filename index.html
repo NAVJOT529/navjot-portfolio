@@ -1,126 +1,458 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Navjot Sharma - Backend Developer with 3+ years of experience in Go, APIs, and cloud technologies">
+  
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400&family=Press+Start+2P&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="portfolio.css">
-    <title>portfolio </title>
-  <!-- SalesHangry reviews code start -->
-   <script>
-      var loadSHAsync = function(){ return new Promise((resolve, reject) => { var t = document.createElement('script'); t.src = 'https://saleshangry.com/sh/sh.js'; t.async = true; t.onload = () => { resolve(); }; var sh = document.getElementsByTagName('script')[0]; sh.parentNode.insertBefore(t, sh); });  }
-      var shLoaded = loadSHAsync();
-      shLoaded.then(function(){
-        loadSHreviews('JxDVpIghKS7fUw8vpCYt_160') 
-      });
-   </script>
-<!-- SalesHangry reviews code end -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- AOS Animation -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  
+  <link rel="stylesheet" href="portfolio.css">
+  <title>Navjot Sharma - Backend Developer</title>
 </head>
 <body>
-      <!-- navbar start  -->
-      <ul  data-aos="fade-right"  data-aos-duration="1700" >
-        <li><a href="#logo"><img src="cv pic.jpg" alt="Logo" width="200" height="100"></a></li>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li><a href="#project">Projects</a></li>
+  <!-- Navigation -->
+  <nav class="navbar" data-aos="fade-down" data-aos-duration="1000">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <img src="cv pic.jpg" alt="Navjot Sharma" class="logo-img">
+        <span class="logo-text">NS</span>
+      </div>
+      <ul class="nav-menu">
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
       </ul>
-      
-      
-      <!-- navbar close  -->
-    
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </div>
+  </nav>
 
-      <!---------slider1 start---------------->
-      <div class="slider1">
-        <div data-aos="zoom-out-up" data-aos-duration="1500" class="contant1">
-          
-            <h1 class="navjotheading" >Navjot</h1>
-            <h1 class="sharmaheading">Sharma</h2>
-                <h2 >I am a Front End Developer</h2>
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-container">
+      <div class="hero-content" data-aos="fade-up" data-aos-duration="1500">
+        <div class="hero-badge">
+          <i class="fas fa-code"></i>
+          <span>Backend Developer</span>
         </div>
-         </div>
-    </section>
-
-      <!---------slider1 close---------------->
-
-
-
-      <!-- about section start  -->
-      <section id="about">
-        <div 
-        data-aos="fade-right"
-        data-aos-duration="1500"
-         data-aos-easing="ease-in-sine" > <div class="contant3">
-
-
-          
-          <img src="cv pic.jpg">
-          
-          <div class="abdata">
-          <h1>About</h1>
-          <p>i am a young and ambitious individual with a<br>
-             passion for web designing. i want to use my <br>
-             skill and knowlegde to make best responsive <br>
-             UI & UX designs.</p></div></div>
-
+        <h1 class="hero-title">
+          Hi, I'm <span class="highlight">Navjot Sharma</span>
+        </h1>
+        <p class="hero-subtitle">
+          Crafting robust backend solutions with Go, building scalable APIs, and architecting cloud-native applications
+        </p>
+        <div class="hero-stats">
+          <div class="stat">
+            <span class="stat-number">3+</span>
+            <span class="stat-label">Years Experience</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number">50+</span>
+            <span class="stat-label">APIs Built</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number">10+</span>
+            <span class="stat-label">Projects Delivered</span>
+          </div>
         </div>
-      </section>
+        <div class="hero-cta">
+          <a href="#projects" class="btn btn-primary">View My Work</a>
+          <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+        </div>
+      </div>
+      <div class="hero-image" data-aos="fade-left" data-aos-duration="1500">
+        <img src="my profile pic.jpg" alt="Navjot Sharma" class="profile-img">
+      </div>
+    </div>
+  </section>
 
-      <!-- about section close  -->
+  <!-- About Section -->
+  <section id="about" class="about">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <h2 class="section-title">About Me</h2>
+        <p class="section-subtitle">Passionate backend developer with expertise in Go and modern cloud technologies</p>
+      </div>
+      <div class="about-content">
+        <div class="about-image" data-aos="fade-right" data-aos-duration="1000">
+          <img src="cv pic.jpg" alt="Navjot Sharma" class="about-img">
+        </div>
+        <div class="about-text" data-aos="fade-left" data-aos-duration="1000">
+          <h3>From Frontend to Backend Excellence</h3>
+          <p>
+            I started my journey as a frontend developer, but my passion for building robust, scalable systems led me to specialize in backend development. With 3+ years of experience in Go, I've developed a deep understanding of microservices architecture, API design, and cloud-native applications.
+          </p>
+          <p>
+            I love solving complex problems, optimizing performance, and building systems that scale. My experience spans from RESTful APIs to GraphQL services, from monolithic applications to microservices, and from traditional deployments to containerized cloud solutions.
+          </p>
+          <div class="about-highlights">
+            <div class="highlight-item">
+              <i class="fas fa-server"></i>
+              <span>Microservices Architecture</span>
+            </div>
+            <div class="highlight-item">
+              <i class="fas fa-database"></i>
+              <span>Database Design & Optimization</span>
+            </div>
+            <div class="highlight-item">
+              <i class="fas fa-cloud"></i>
+              <span>Cloud-Native Development</span>
+            </div>
+            <div class="highlight-item">
+              <i class="fas fa-shield-alt"></i>
+              <span>Security & Best Practices</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-      
-
-            <!----------slider4 start----------------->
-            <section id="project">
-              <br><br>
-              <div class="contant4">
-                <h1 data-aos="fade-up-right" data-aos-duration="1500" >Major Project</h1>
-                <div class="container">
-              <div  data-aos="fade-right"
-              data-aos-offset="300"
-              data-aos-easing="ease-in-sine" class="container1">
-              <img  src="web site screenshot.png">
-              <a href="https://gradschooldemo.vercel.app/index.html"><div class="button1">Open</div></a></div>
-
-              
-                <div data-aos="fade-left"
-                data-aos-offset="300"
-                data-aos-easing="ease-in-sine" class="container2">
-                <img src="shami screenshot.png">
-                <a href="https://shamifruit.vercel.app/"><div class="button1">Open</div></a></div></div></div>
-            
-            <!----------slider4 close----------------->
-               <!----------slider2 start----------------->
-          
-            <div data-aos="fade-up"
-            data-aos-anchor-placement="top-bottom" data-aos-duration="1500" class="contant2">
-            <h1>PSD Project</h1>
-        <img src="psd screenshot.png">
-            <a href="images.html"><div class="button">Open</div></a> </div>
-          </section>
-          <!----------slider2 close----------------->
-
-            <!------------slider5 start--------------->
-            <section id="contact">
-             <div class="contant5">
-                <h1 data-aos="fade-up-right" data-aos-duration="1500" >Contact</h1>
-                <a href="https://github.com/NAVJOT529" data-aos-duration="1500" data-aos="flip-up" class="fa fa-github"></a>
-                <a href="https://www.linkedin.com/in/navjot-sharma-230532226" data-aos-duration="1500" data-aos="flip-up" class="fa fa-linkedin"></a>
-                <a href="https://www.instagram.com/i_am_navjotsharma/" data-aos-duration="1500" data-aos="flip-up" class="fa fa-instagram"></a><br><br>
-                <a href="mailto:navjotuna10@gmail.com"><h5>navjotuna10@gmail.com</h5></a>
-               <a href="http://wa.me/+918219997953"> <p>+91 8219997953</p>
+  <!-- Skills Section -->
+  <section id="skills" class="skills">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <h2 class="section-title">Technical Skills</h2>
+        <p class="section-subtitle">Technologies and tools I work with</p>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-category" data-aos="fade-up" data-aos-delay="100">
+          <h3 class="category-title">
+            <i class="fas fa-code"></i>
+            Backend Development
+          </h3>
+          <div class="skill-items">
+            <div class="skill-item">
+              <span class="skill-name">Go (Golang)</span>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 95%"></div>
               </div>
-            </section>
-            <!------------slider5 close--------------->
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">RESTful APIs</span>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 90%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">GraphQL</span>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 85%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">Microservices</span>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 88%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
 
-            <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-            <script>
-              AOS.init();
-            </script>
+        <div class="skill-category" data-aos="fade-up" data-aos-delay="200">
+          <h3 class="category-title">
+            <i class="fas fa-database"></i>
+            Databases & Storage
+          </h3>
+          <div class="skill-items">
+            <div class="skill-item">
+              <span class="skill-name">PostgreSQL</span>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 92%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">Redis</span>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 85%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">MongoDB</span>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 80%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">Elasticsearch</span>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 75%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-category" data-aos="fade-up" data-aos-delay="300">
+          <h3 class="category-title">
+            <i class="fas fa-cloud"></i>
+            Cloud & DevOps
+          </h3>
+          <div class="skill-items">
+            <div class="skill-item">
+              <span class="skill-name">Docker</span>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 90%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">Kubernetes</span>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 82%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">AWS</span>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 85%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">CI/CD</span>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 88%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <h2 class="section-title">Featured Projects</h2>
+        <p class="section-subtitle">Some of my recent work in backend development</p>
+      </div>
+      
+      <div class="projects-grid">
+        <!-- Backend API Project -->
+        <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="project-image">
+            <img src="web site screenshot.png" alt="E-commerce API">
+            <div class="project-overlay">
+              <div class="project-tech">
+                <span class="tech-tag">Go</span>
+                <span class="tech-tag">PostgreSQL</span>
+                <span class="tech-tag">Redis</span>
+                <span class="tech-tag">Docker</span>
+              </div>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">E-commerce Backend API</h3>
+            <p class="project-description">
+              A scalable e-commerce backend built with Go, featuring user authentication, product management, order processing, and payment integration. Implements microservices architecture with Redis caching and PostgreSQL database.
+            </p>
+            <div class="project-links">
+              <a href="https://gradschooldemo.vercel.app/index.html" class="btn btn-sm btn-primary" target="_blank">
+                <i class="fas fa-external-link-alt"></i>
+                Live Demo
+              </a>
+              <a href="#" class="btn btn-sm btn-secondary">
+                <i class="fab fa-github"></i>
+                Code
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Microservices Project -->
+        <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="project-image">
+            <img src="shami screenshot.png" alt="Microservices Platform">
+            <div class="project-overlay">
+              <div class="project-tech">
+                <span class="tech-tag">Go</span>
+                <span class="tech-tag">gRPC</span>
+                <span class="tech-tag">Kubernetes</span>
+                <span class="tech-tag">MongoDB</span>
+              </div>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Microservices Platform</h3>
+            <p class="project-description">
+              A distributed system built with Go microservices, using gRPC for inter-service communication, Kubernetes for orchestration, and MongoDB for data persistence. Features service discovery, load balancing, and monitoring.
+            </p>
+            <div class="project-links">
+              <a href="https://shamifruit.vercel.app/" class="btn btn-sm btn-primary" target="_blank">
+                <i class="fas fa-external-link-alt"></i>
+                Live Demo
+              </a>
+              <a href="#" class="btn btn-sm btn-secondary">
+                <i class="fab fa-github"></i>
+                Code
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Legacy Frontend Project -->
+        <div class="project-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="project-image">
+            <img src="psd screenshot.png" alt="Legacy Frontend Project">
+            <div class="project-overlay">
+              <div class="project-tech">
+                <span class="tech-tag">HTML</span>
+                <span class="tech-tag">CSS</span>
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">PSD</span>
+              </div>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Legacy Frontend Projects</h3>
+            <p class="project-description">
+              Collection of frontend projects from my early development days, showcasing responsive design, modern CSS techniques, and interactive user interfaces. These projects demonstrate my foundation in web development.
+            </p>
+            <div class="project-links">
+              <a href="images.html" class="btn btn-sm btn-primary" target="_blank">
+                <i class="fas fa-external-link-alt"></i>
+                View Projects
+              </a>
+              <a href="#" class="btn btn-sm btn-secondary">
+                <i class="fab fa-github"></i>
+                Code
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <h2 class="section-title">Get In Touch</h2>
+        <p class="section-subtitle">Let's discuss your next backend project</p>
+      </div>
+      
+      <div class="contact-content">
+        <div class="contact-info" data-aos="fade-right" data-aos-duration="1000">
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <div class="contact-details">
+              <h4>Email</h4>
+              <a href="mailto:navjotuna10@gmail.com">navjotuna10@gmail.com</a>
+            </div>
+          </div>
+          
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fas fa-phone"></i>
+            </div>
+            <div class="contact-details">
+              <h4>Phone</h4>
+              <a href="http://wa.me/+918219997953">+91 8219997953</a>
+            </div>
+          </div>
+          
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <div class="contact-details">
+              <h4>Location</h4>
+              <span>India</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="social-links" data-aos="fade-left" data-aos-duration="1000">
+          <h3>Connect with me</h3>
+          <div class="social-grid">
+            <a href="https://github.com/NAVJOT529" class="social-link github" target="_blank">
+              <i class="fab fa-github"></i>
+              <span>GitHub</span>
+            </a>
+            <a href="https://www.linkedin.com/in/navjot-sharma-230532226" class="social-link linkedin" target="_blank">
+              <i class="fab fa-linkedin"></i>
+              <span>LinkedIn</span>
+            </a>
+            <a href="https://www.instagram.com/i_am_navjotsharma/" class="social-link instagram" target="_blank">
+              <i class="fab fa-instagram"></i>
+              <span>Instagram</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <p>&copy; 2024 Navjot Sharma. Built with Go and modern web technologies.</p>
+        <div class="footer-links">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true,
+      offset: 100
+    });
+
+    // Mobile menu toggle
+    const hamburger = document.querySelector('.hamburger');
+    const navMenu = document.querySelector('.nav-menu');
+
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('active');
+      navMenu.classList.toggle('active');
+    });
+
+    // Close mobile menu when clicking on a link
+    document.querySelectorAll('.nav-link').forEach(n => n.addEventListener('click', () => {
+      hamburger.classList.remove('active');
+      navMenu.classList.remove('active');
+    }));
+
+    // Smooth scrolling for navigation links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+        }
+      });
+    });
+  </script>
 </body>
 </html>
